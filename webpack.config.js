@@ -41,6 +41,8 @@ const config = {
         enforce: 'pre',
         test: /\.jsx?$/,
         exclude: /node_modules/,
+
+
       },
       {
         test: /\.jsx?$/,
@@ -134,8 +136,10 @@ const config = {
 
   plugins: [
     new webpack.LoaderOptionsPlugin({
-      test: /\.jsx?$/,
+      
       options: {
+
+        
       },
     }),
     new webpack.optimize.ModuleConcatenationPlugin(),

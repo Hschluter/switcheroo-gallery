@@ -1,19 +1,29 @@
 import React from 'react';
-import img from '../assets/images/react_logo_512x512.png';
+import img from '../assets/images/test.jpg';
+import image from '../assets/images/Sunset_2007-1.jpg';
+import Img from './Img.jsx';
+
 
 const App = () => {
   return (
-    <div>
-      <h2 id="heading">Hello ReactJS</h2>
+
+    <div className="header" id="circle">
+      <h2 className="title">Switcheroo Gallery!</h2>
+      <button className="upload"> Upload an image!</button>
       <img
         className="image"
         style={{ margin: '0.5em' }}
            height="40"
-        width="40"
+        className="img-circle"
         src={img}
-        alt="React Logo"
+        alt="test"
+
+      />
+      <Img
+      src={image}
       />
     </div>
+
   );
 };
 
