@@ -2,6 +2,8 @@ import React from 'react';
 import Img from './Img.jsx';
 import img1 from '../assets/images/test.jpg';
 import img2 from '../assets/images/Sunset_2007-1.jpg';
+import img3 from '../assets/images/hikingclub.jpg';
+import img4 from '../assets/images/greg.jpg';
 
 const mockApiResponse = [
     {
@@ -11,6 +13,14 @@ const mockApiResponse = [
     {
         id: '2',
         src: img2
+    },
+    {
+        id: '3',
+        src: img3
+    },
+    {
+        id: '4',
+        src: img4
     }
 ];
 
