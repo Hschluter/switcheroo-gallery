@@ -1,8 +1,18 @@
 import React from 'react';
-import img from '../assets/images/test.jpg';
-import image from '../assets/images/Sunset_2007-1.jpg';
 import Img from './Img.jsx';
+import img1 from '../assets/images/test.jpg';
+import img2 from '../assets/images/Sunset_2007-1.jpg';
 
+const mockApiResponse = [
+    {
+        id: '1',
+        src: img1
+    },
+    {
+        id: '2',
+        src: img2
+    }
+];
 
 const App = () => {
   return (
@@ -10,18 +20,13 @@ const App = () => {
     <div className="header" id="circle">
       <h2 className="title">Switcheroo Gallery!</h2>
       <button className="upload"> Upload an image!</button>
-      <img
-        className="image"
-        style={{ margin: '0.5em' }}
-           height="40"
-        className="img-circle"
-        src={img}
-        alt="test"
 
-      />
-      <Img
-      src={image}
-      />
+    { mockApiResponse.map((apiResponseImage,index) => (
+        <Img
+            key={index}
+            src={apiResponseImage.src}
+        />
+    ))}
     </div>
 
   );

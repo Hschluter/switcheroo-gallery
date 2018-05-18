@@ -15,9 +15,10 @@ class Img extends React.Component {
 }
 Img.propTypes = {
   src: PropTypes.string,
+  size: PropTypes.number
 };
 Img.defaultProps = {
-  src: PropTypes.string,
+  src: PropTypes.string
 };
 
 export default Img;
